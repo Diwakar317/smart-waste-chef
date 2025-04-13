@@ -12,7 +12,7 @@ def load_image(image_path):
 
 # Load the pre-trained model
 def predict_food(image_path):
-    # Load the pre-trained model (ensure it's in eval mode)
+    # Load the pre-trained model from TensorFlow Hub
     model = hub.load("https://tfhub.dev/google/imagenet/mobilenet_v2_140_224/classification/5")
     
     # Load and process the image
@@ -20,9 +20,9 @@ def predict_food(image_path):
     
     # Run the model on the image
     predictions = model(image)
-    
+
     # Ensure predictions are in the right format (convert to numpy if needed)
-    predictions = predictions.numpy()  # Convert the predictions to a numpy array
+    predictions = predictions.numpy()  # Convert to numpy array for easier processing
     
     # Get the predicted class ID
     predicted_id = np.argmax(predictions, axis=-1)
