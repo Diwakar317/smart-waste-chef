@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <title>Recipes</title>
+</head>
+<body>
+  <h3>Predicted Item: {{ predicted_item }}</h3>
+  <h4>Suggested Recipes:</h4>
+  {% for recipe in recipes %}
+    <div>
+      <strong>{{ recipe.name }}</strong><br>
+      Ingredients: {{ recipe.ingredients | join(', ') }}<br>
+      Steps: {{ recipe.steps }}<br>
+    </div>
+    <hr>
+  {% endfor %}
+</body>
+</html>

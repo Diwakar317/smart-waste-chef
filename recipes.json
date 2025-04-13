@@ -1,0 +1,16 @@
+{
+  "rice": [
+    {
+      "name": "Fried Rice",
+      "ingredients": ["Rice", "Vegetables", "Spices"],
+      "steps": "Stir fry veggies, add rice, season and serve."
+    }
+  ],
+  "chapati": [
+    {
+      "name": "Chapati Pizza",
+      "ingredients": ["Chapati", "Veggies", "Cheese"],
+      "steps": "Add toppings, grill or roast, and serve."
+    }
+  ]
+}
