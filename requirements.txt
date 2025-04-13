@@ -1,4 +1,3 @@
-flask
-tensorflow
-tensorflow-hub
-pillow
+Flask
+Pillow
+gunicorn
